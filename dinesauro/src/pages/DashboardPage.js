@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Card, Typography, Button, Link } from "@mui/material";
+import { Grid, Card, Typography, Button } from "@mui/material";
 import ExpenseRowComponent from "../components/ExpenseRowComponent";
 import ExpenseForecastProgressComponent from "../components/ExpenseForecastProgressComponent";
 import { getMonthString } from "../util/util";
@@ -142,6 +142,7 @@ export default class DashboardPage extends React.Component {
                   <Grid item xs={4} />
                   <Grid item xs={4}>
                     <Button
+                      href="/expenses"
                       variant="outlined"
                       className="dark-grey-btn"
                       sx={{ mt: 5 }}

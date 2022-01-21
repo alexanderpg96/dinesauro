@@ -1,6 +1,7 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import { Link } from "react-router-dom";
 
 import appLogoImage from "../assets/images/dinesauro-img.svg";
 
@@ -15,12 +16,14 @@ export default function NavbarComponent() {
       style={{ height: "12vh" }}
     >
       <Grid item xs={4}>
-        <Typography
-          sx={{ fontSize: "28px", ml: 4 }}
-          className="cursive-font primary-color"
-        >
-          Dinesauro
-        </Typography>
+        <Link to="/" style={{ textDecoration: "none", cursor: "pointer" }}>
+          <Typography
+            sx={{ fontSize: "28px", ml: 4 }}
+            className="cursive-font primary-color"
+          >
+            Dinesauro
+          </Typography>
+        </Link>
       </Grid>
       <Grid item xs={4} style={{ textAlign: "center" }}>
         <img src={appLogoImage} alt="appLogoImage" style={{ width: "4rem" }} />
