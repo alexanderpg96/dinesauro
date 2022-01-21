@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;900&display=swap");
 
 h1 {
   font-size: 2.5rem;
   margin: 0;
 }
 
+h2 {
+  font-weight: 800;
+}
+
 .App {
   text-align: center;
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
+  background-color: "#FEFEFE";
 }
 
 .App-logo {
@@ -46,10 +51,28 @@ h1 {
   }
 }
 
+.dark-grey-btn {
+  border-color: #6a6a6a !important;
+  color: #6a6a6a !important;
+}
+
+.dark-grey-btn:hover {
+  background: #6a6a6a10 !important;
+  transition: background 250ms !important;
+}
+
 .cursive-font {
-  font-family: 'Pacifico', cursive;
+  font-family: "Pacifico", cursive !important;
 }
 
 .primary-color {
   color: #009267;
+}
+
+.error-color {
+  color: #ff8184;
+}
+
+.success-color {
+  color: #78d9ae;
 }

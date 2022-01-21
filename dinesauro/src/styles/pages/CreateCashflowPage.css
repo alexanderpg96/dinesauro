@@ -1,0 +1,44 @@
+.payment-selector {
+  position: relative;
+  top: 34px;
+  font-size: 22px;
+  font-weight: 800;
+  margin-left: 70px;
+  transition: color 250ms;
+}
+
+.payment-selector:hover {
+  cursor: pointer;
+  color: #009267;
+  transition: color 250ms;
+}
+
+.payment-selector-popup {
+  position: absolute;
+  top: 50px;
+  left: -20px;
+  width: 300px;
+  background: #fff;
+  z-index: 999;
+}
+
+.payment-row {
+  transition: all 250ms;
+  padding: 15px 25px;
+  background: #fff;
+}
+
+.payment-row:hover {
+  background: #78d9ae;
+  color: #00694a;
+  transition: all 250ms;
+  cursor: pointer;
+}
+
+.react-datepicker__input-container {
+  width: inherit;
+}
+
+.MuiFormControl-root {
+  width: 100%;
+}

@@ -1,8 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 import { Button, Grid, TextField } from "@mui/material";
-import { spacing } from "@mui/system";
 
 import appLogoImage from "../assets/images/dinesauro-img.svg";
 
@@ -42,6 +40,7 @@ export default function LoginPage() {
         <TextField
           id="outlined-basic"
           label="Password"
+          type="password"
           variant="outlined"
           style={{ width: "35vw" }}
         />

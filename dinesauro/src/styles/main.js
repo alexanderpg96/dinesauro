@@ -13,6 +13,22 @@ export const mainStyleOverrides = createTheme({
     fontFamily: `"Cairo", "sans-serif"`,
   },
   components: {
+    MuiTypography: {
+      styleOverrides: {
+        h2: {
+          fontWeight: "800",
+        },
+        h3: {
+          fontWeight: "800",
+        },
+        h4: {
+          fontWeight: "800",
+        },
+        h6: {
+          fontWeight: "800",
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
@@ -24,6 +40,15 @@ export const mainStyleOverrides = createTheme({
           padding: "16px 0px",
           "&:hover": {
             boxShadow: "none",
+          },
+        },
+        outlined: {
+          color: "#78D9AE",
+          borderWidth: "2.5px",
+          padding: "10px 12px",
+          width: "100%",
+          "&:hover": {
+            borderWidth: "2.5px",
           },
         },
       },

@@ -1,14 +1,20 @@
 import "./App.css";
-import HomePage from "./pages/HomePage";
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
+import DashboardPage from "./pages/DashboardPage";
+import NavbarComponent from "./components/NavbarComponent";
+import CreateCashflowPage from "./pages/CreateCashflowPage";
 
 function App() {
   return (
-    <Routes>
-      <Route exact path="/" element={<HomePage />} />
-      <Route path="/login" element={<LoginPage />} />
-    </Routes>
+    <>
+      <NavbarComponent />
+      <Routes>
+        <Route exact path="/" element={<DashboardPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cashflow" element={<CreateCashflowPage />} />
+      </Routes>
+    </>
   );
 }
 
