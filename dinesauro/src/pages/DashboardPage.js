@@ -167,7 +167,12 @@ export default class DashboardPage extends React.Component {
               <ExpenseForecastProgressComponent key={index} {...c} />
             ))}
 
-            <Button variant="outlined" className="dark-grey-btn" sx={{ mt: 5 }}>
+            <Button
+              href="/forecasts"
+              variant="outlined"
+              className="dark-grey-btn"
+              sx={{ mt: 5 }}
+            >
               Manage Monthly Forecast
             </Button>
           </Card>

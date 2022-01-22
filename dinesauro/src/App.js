@@ -5,6 +5,7 @@ import DashboardPage from "./pages/DashboardPage";
 import NavbarComponent from "./components/NavbarComponent";
 import CreateCashflowPage from "./pages/CreateCashflowPage";
 import AllExpensesPage from "./pages/AllExpensesPage";
+import MonthlyForecastPage from "./pages/MonthlyForecastPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/cashflow" element={<CreateCashflowPage />} />
         <Route path="/expenses" element={<AllExpensesPage />} />
+        <Route path="/forecasts" element={<MonthlyForecastPage />} />
       </Routes>
     </>
   );
