@@ -31,6 +31,7 @@ export default class DashboardPage extends React.Component {
     )
       .then((response) => response.json())
       .then((result) => {
+        console.log("expenses", result);
         this.setState((prevState) => ({
           ...prevState.forecasts,
           expenses: result,
@@ -51,6 +52,7 @@ export default class DashboardPage extends React.Component {
           ...prevState.expenses,
           forecasts: result,
         }));
+        console.log(this.state);
       });
   }
 
@@ -62,6 +64,7 @@ export default class DashboardPage extends React.Component {
         this.totalExpenses += exp.ammount;
       }
     });
+    console.log(this.state);
   }
 
   render() {

@@ -76,3 +76,12 @@ h2 {
 .success-color {
   color: #78d9ae;
 }
+
+.edit-link {
+  color: #78d9ae;
+}
+
+.edit-link:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
